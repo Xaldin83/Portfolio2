@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "../composants/ProjectCard";
+import Navbar from "../composants/Header";
+import Footer from "../composants/Footer";
+
+import '../styles/global.scss';
+
 import data from '../data/projects.json';
 
 type Project ={
@@ -23,6 +28,10 @@ const Projects = () => {
     );
 
     return(
+        <>
+
+            <Navbar/>
+
         <section>
             <h2>Mes projets</h2>
 
@@ -48,6 +57,8 @@ const Projects = () => {
                 )}
             </div>
         </section>
+        <Footer/>
+        </>
     );
 };
 

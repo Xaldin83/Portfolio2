@@ -1,0 +1,37 @@
+@import './global.scss';
+
+header{
+    display: flex;
+    padding: 60px ;
+    border: $primary-border;
+    background-color: #00000050;
+    
+    img{
+        max-width: 130px;
+        border-radius: 30px;
+        position: absolute;
+        
+    }
+    
+    nav{
+        display: flex;
+        margin: auto;
+        gap: 50px;
+        background-color: $second-color;
+        padding: 50px;
+        border-radius: 20px;
+        border: $primary-border;
+
+        a{
+            text-decoration: none;
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 20px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: white;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
