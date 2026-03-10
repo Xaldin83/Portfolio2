@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Python",
+        "image": "https://skillicons.dev/icons?i=python"
+    },
+    {
+        "id": 2,
+        "name": "C",
+        "image": "https://skillicons.dev/icons?i=c"
+    },
+    {
+        "id": 3,
+        "name": "C++",
+        "image": "https://skillicons.dev/icons?i=cpp"
+    },
+    {
+        "id": 4,
+        "name": "Bash",
+        "image": "https://skillicons.dev/icons?i=bash"
+    }
+]

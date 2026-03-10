@@ -3,21 +3,152 @@
 main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin-bottom: 60px;
     
     h1{
         grid-column-start: 1;
         grid-column-end: 3;
     }
 
+
     #presentation{
         grid-column-start: 1;
         grid-column-end: 3;
         margin: auto;
-        max-width: 500px;
+        max-width: 600px;
         background-color: $third-color;
         border: $second-border;
         border-radius: 30px;
         padding: 30px;
         align-content: center;
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    #competences{
+        margin: 40px auto;
+        gap: 30px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        
+        background-color: $second-color;
+        width: max-content;
+        padding: 20px;
+        padding-bottom: 50px;
+        border: $primary-border;
+        border-radius: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        h2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        article{
+
+
+            div{
+                display: flex;
+                margin: auto;
+                gap: 20px;
+                
+                .logo-wrapper{
+                    position: relative;
+                    display: inline-block;
+                    transition: all 0.3s ease-in-out;
+                    &:hover img{
+                        transform: scale(1.3) translateY(-10px);
+                        filter: grayscale(0%) brightness(1.1) drop-shadow(0 0 20px var($third-color));
+                        transition: all 0.3s ease-in-out;
+                    }
+                
+                    &:hover::after{
+                    content: attr(data-name);
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -70px;
+                    background-color: $primary-color;
+                    color: $font-color;
+                    padding: 10px 18px;
+                    border-radius: 6px;
+                    font-size: 1.25rem;
+                    z-index: 10;
+                    pointer-events: none;
+                    white-space: nowrap;
+                    box-shadow: 0 4px 12px rgba(189, 147, 249, 0.3);
+                    }
+                }
+            }
+        }
+
+    }
+
+    #formations{
+        margin: auto;
+        text-align: center;
+        width: max-content;
+        border-radius: 30px;
+        background-color: $second-color;
+        border: $primary-border;
+
+        ul{
+            list-style: none;
+            gap: 20px;
+            padding: 10px;
+            
+            
+            li{
+                margin: auto;
+                
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $font-color;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: $third-color;
+                        transition: all 0.3s ease-in-out;
+
+                    }
+                }
+            }
+        }
+    }
+
+    #contact{
+        margin: auto;
+        text-align: center;
+        width: max-content;
+        border-radius: 30px;
+        background-color: $second-color;
+        border: $primary-border;
+        padding: 20px;
+        div{
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                color: $font-color;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: $third-color;
+                    transition: all 0.3s ease-in-out;
+
+                }
+            }
+        }
     }
 }

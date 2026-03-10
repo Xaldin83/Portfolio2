@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Postgre",
+        "image": "https://skillicons.dev/icons?i=postgres"
+    },
+    {
+        "id": 2,
+        "name": "Mongodb",
+        "image": "https://skillicons.dev/icons?i=mongodb"
+    },
+    {
+        "id": 3,
+        "name": "Mysql",
+        "image": "https://skillicons.dev/icons?i=mysql"
+    }
+]

@@ -1,5 +1,11 @@
+import { Link } from "react-router-dom";
 import Footer from "../composants/Footer";
 import Navbar from "../composants/Header";
+import Langages_programmation from "../composants/SkillProgrammation";
+import Langages_web from "../composants/SkillWeb";
+import Langages_BDD from "../composants/Skill_BDD";
+import Langages_others from "../composants/SkillOther";
+
 import '../styles/Home.scss';
 
 const Home = () =>{
@@ -8,7 +14,6 @@ const Home = () =>{
 
         <html lang="fr">
         <head>
-            <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Accueil</title>
         </head>
@@ -36,53 +41,52 @@ const Home = () =>{
                     <h2>Mes compétences</h2>
                     <article>
                         <h3>Langage de programmation</h3>
-                        <ul>
-                            <li class="langage" id="python">python</li>
-                            <li class="langage" id="c">c</li>
-                            <li class="langage" id="c++">c++</li>
-                            <li class="langage" id="bash">bash</li>
-                        </ul>
+                        <div>
+                            <Langages_programmation/>
+                        </div>
                     </article>
                     <article>
                         <h3>Langage web</h3>
-                        <ul>
-                            <li class="langage" id="html">html</li>
-                            <li class="langage" id="css">css</li>
-                            <li class="langage" id="javascript">javascript</li>
-                            <li class="langage" id="php">php</li>
-                        </ul>
+                        <div>
+                            <Langages_web/>
+                        </div>
                     </article>
                     <article>
                         <h3>Base de données</h3>
-                        <ul>
-                            <li class="langage" id="postgres">postgres</li>
-                            <li class="langage" id="mongodb">mongodb</li>
-                            <li class="langage" id="mysql">mysql</li>
-                        </ul>
+                        <div>
+                            <Langages_BDD/>
+                        </div>
                     </article>
                     <article>
                         <h3>Autres</h3>
-                        <ul>
-                            <li class="langage" id="wordpress">wordpress</li>
-                            <li class="langage" id="latex">latex</li>
-                        </ul>
+                        <div>
+                            <Langages_others/>
+                        </div>
                     </article>
                 </section>
 
                 <section id="formations">
                     <h2>Mes formations</h2>
-                    <p></p>
-                </section>
-
-                <section id="links">
-                    <h2>Les liens complémentaires</h2>
-                    <p></p>
+                    <ul>
+                        <li><a href="https://formations.univ-tln.fr/fr/offre-de-formation/licence-XA/licence-informatique-LOY3GIYS.html">Université de Toulon - Licence Informatique et Science du numérique</a></li>
+                        <li><a href="https://laplateforme.io/prf-var-langage-informatique/">Ecole La Plateforme - Langage informatique à la carte</a></li>
+                    </ul>
                 </section>
 
                 <section id="contact">
-                    <h2>Les liens complémentaires</h2>
-                    <p></p>
+                    <h2>Contact & Projets</h2>
+                    <div>
+                        <article>
+                            <h3>Me contacter</h3>
+                            <Link to="/contact">Contact</Link>
+                        </article>
+                        <article>
+                            <h3>Voir les projets</h3>
+                            <Link to="/projects">Projets</Link>
+                        </article>
+                    </div>
                 </section>
+
             </main>
 
         <Footer/>

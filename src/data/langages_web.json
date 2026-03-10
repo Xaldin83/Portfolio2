@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "HTML",
+        "image": "https://skillicons.dev/icons?i=html"
+    },
+    {
+        "id": 2,
+        "name": "CSS",
+        "image": "https://skillicons.dev/icons?i=css"
+    },
+    {
+        "id": 3,
+        "name": "Javascript",
+        "image": "https://skillicons.dev/icons?i=js"
+    },
+    {
+        "id": 4,
+        "name": "Sass",
+        "image": "https://skillicons.dev/icons?i=sass"
+    },
+    {
+        "id": 5,
+        "name": "React",
+        "image": "https://skillicons.dev/icons?i=react"
+    },
+    {
+        "id": 6,
+        "name": "Vite",
+        "image": "https://skillicons.dev/icons?i=vite"
+    }
+    ,
+    {
+        "id": 7,
+        "name": "PHP",
+        "image": "https://skillicons.dev/icons?i=php"
+    }
+]
