@@ -30,34 +30,45 @@ const Projects = () => {
     return(
         <>
 
-            <Navbar/>
+        <html lang="fr">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Projets</title>
+            </head>
+            <body>
+                
+                <Navbar/>
 
-        <section>
-            <h2>Mes projets</h2>
+                <section>
+                    <article>
+                        <h1>Mes projets</h1>
 
-            <input
-                type="text"
-                placeholder="Rechercher un projet..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-            />
-
-            <div className="project-list">
-                {filteredProjects.length > 0 ? (
-                    filteredProjects.map((project) => (
-                        <ProjectCard
-                            key={project.id}
-                            title={project.title}
-                            description={project.description}
-                            image={project.image}
-                        />
-                    ))
-                ) : (
-                    <p>Aucun projet ne correspond à votre recherche.</p>
-                )}
-            </div>
-        </section>
-        <Footer/>
+                        <input
+                            type="text"
+                            placeholder="Rechercher un projet..."
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
+                            />
+                    </article>
+                    <div className="project-list">
+                        {filteredProjects.length > 0 ? (
+                            filteredProjects.map((project) => (
+                                <ProjectCard
+                                key={project.id}
+                                title={project.title}
+                                description={project.description}
+                                image={project.image}
+                                />
+                            ))
+                        ) : (
+                            <p>Aucun projet ne correspond à votre recherche.</p>
+                        )}
+                    </div>
+                </section>
+                <Footer/>
+            </body>
+        </html>
         </>
     );
 };
