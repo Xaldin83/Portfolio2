@@ -1,14 +1,16 @@
 [
     {
         "id": 1,
-        "title": "Application de recettes",
-        "description":"Une application de recettes avec filtrages et recherche.",
-        "image": "public/img/images/gnome.png"
+        "title": "Raytracing",
+        "description":"Création en Python d'un sytème basique de raytracing, en utilisant numpy et matplot.lib.",
+        "image": "public/img/images/raytracing.png",
+        "link":"https://github.com/Xaldin83/RayTracing"
     },
     {
         "id": 2,
-        "title": "To-do list",
-        "description":"Liste de tâches avec persistance locale.",
-        "image": "public/img/images/maragoat.png"
+        "title": "Pokedex",
+        "description":"Création d'un pokédex dynamique en python, en utilisant TKinter.",
+        "image": "public/img/images/pokedex.png",
+        "link":"https://github.com/Xaldin83/Pokedex_Python"
     }
 ]

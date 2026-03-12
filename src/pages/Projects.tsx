@@ -4,6 +4,8 @@ import Navbar from "../composants/Header";
 import Footer from "../composants/Footer";
 
 import '../styles/global.scss';
+import '../styles/Projects.scss';
+
 
 import data from '../data/projects.json';
 
@@ -12,6 +14,7 @@ type Project ={
     title: string;
     description: string;
     image: string;
+    link:string;
 };
 
 const Projects = () => {
@@ -59,6 +62,7 @@ const Projects = () => {
                                 title={project.title}
                                 description={project.description}
                                 image={project.image}
+                                link={project.link}
                                 />
                             ))
                         ) : (
