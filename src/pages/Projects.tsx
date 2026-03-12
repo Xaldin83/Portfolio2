@@ -9,6 +9,8 @@ import '../styles/Projects.scss';
 
 import data from '../data/projects.json';
 
+
+
 type Project ={
     id: number;
     title: string;
@@ -33,18 +35,10 @@ const Projects = () => {
     return(
         <>
 
-        <html lang="fr">
-            <head>
-                =
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Projets</title>
-            </head>
-            <body>
                 
                 <Navbar/>
 
                 <section>
-                    <article>
                         <h1>Mes projets</h1>
 
                         <input
@@ -53,7 +47,7 @@ const Projects = () => {
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
                             />
-                    </article>
+
                     <div className="project-list">
                         {filteredProjects.length > 0 ? (
                             filteredProjects.map((project) => (
@@ -71,8 +65,7 @@ const Projects = () => {
                     </div>
                 </section>
                 <Footer/>
-            </body>
-        </html>
+
         </>
     );
 };

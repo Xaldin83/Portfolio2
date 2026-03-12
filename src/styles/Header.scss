@@ -2,18 +2,29 @@
 
 header{
     display: flex;
-    padding: 60px ;
+    padding: 34px 0 ;
     border: $primary-border;
     background-color: #00000050;
+
+    height: 129px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+
     
     img{
         max-width: 130px;
         border-radius: 30px;
         position: absolute;
-        
+        top: 34px;
+        left: 34px;
     }
     
     nav{
+        position: relative;
         display: flex;
         margin: auto;
         gap: 250px;
@@ -27,6 +38,7 @@ header{
             font-family: $font-stack;
             font-weight: 400;
             font-size: 20px;
+            color: #230c33;
             transition: all 0.3s ease-in-out;
             &:hover{
                 color: white;

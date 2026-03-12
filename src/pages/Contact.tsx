@@ -1,21 +1,24 @@
 import Footer from "../composants/Footer";
 import Navbar from "../composants/Header";
 
+import {BiLogoGmail } from "react-icons/bi";
+import { Link } from "@react-email/link";
+
+const Email = () => {
+return <Link href="https://mariuslucas.pichon@gmail.com"><BiLogoGmail/>Mon mail</Link>;
+};
+
 const Contact = () =>{
 
     return (
         <>
-        <html lang="fr">
-            <head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Accueil</title>
-            </head>
 
-                <Navbar/>
+            <Navbar/>
 
-                <Footer/>
-        </html>
-    </>
+            <Email/>
+
+            <Footer/>
+        </>
     )
 };
 

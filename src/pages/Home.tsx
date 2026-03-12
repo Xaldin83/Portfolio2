@@ -8,15 +8,10 @@ import Langages_others from "../composants/SkillOther";
 
 import '../styles/Home.scss';
 
+document.title="Mon Portfolio"
 const Home = () =>{
     return (
         <>
-
-        <html lang="fr">
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Accueil</title>
-        </head>
 
             <Navbar/>
 
@@ -90,7 +85,6 @@ const Home = () =>{
             </main>
 
         <Footer/>
-        </html>
         </>
 )};
 

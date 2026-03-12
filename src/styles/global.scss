@@ -7,10 +7,17 @@ html{
 body {
     font-family: $font-stack;
     margin: 0;
-    padding: 0;
-    background: $primary-color;
+    padding-top: 200px;
+    // background: $primary-color;
+    background-image: url("https://wallpaperaccess.com/full/5927911.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+
     color: $font-color;
+
 }
+
 
 h1{
     text-align: center;
