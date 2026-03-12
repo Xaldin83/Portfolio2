@@ -68,19 +68,6 @@ const Home = () =>{
                     </ul>
                 </section>
 
-                <section id="contact">
-                    <h2>Contact & Projets</h2>
-                    <div>
-                        <article>
-                            <h3>Me contacter</h3>
-                            <Link to="/contact">Contact</Link>
-                        </article>
-                        <article>
-                            <h3>Voir les projets</h3>
-                            <Link to="/projects">Projets</Link>
-                        </article>
-                    </div>
-                </section>
 
             </main>
 

@@ -2,18 +2,16 @@
 
 main{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     margin-bottom: 60px;
     
     h1{
-        grid-column-start: 1;
-        grid-column-end: 3;
+
     }
 
 
     #presentation{
-        grid-column-start: 1;
-        grid-column-end: 3;
+
         margin: auto;
         max-width: 600px;
         background-color: $third-color;
@@ -30,8 +28,6 @@ main{
     #competences{
         margin: 40px auto;
         gap: 30px;
-        grid-column-start: 1;
-        grid-column-end: 3;
         text-align: center;
         
         background-color: $second-color;
