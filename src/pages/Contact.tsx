@@ -1,10 +1,10 @@
 // import { Link } from "react-router-dom";
 import Footer from "../composants/Footer";
 import Navbar from "../composants/Header";
-import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 import '../styles/contact.scss';
+import { useRef } from "react";
 
 
 export const ContactUs = () => {
