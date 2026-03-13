@@ -1,16 +1,32 @@
 @import './global';
 
+body{
+        position: static;
+}
+#mainContact{
+    height: 67.2vh;
+}
 form{
     max-width: 500px;
     margin: auto;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    padding: 20px;
+    
+
+
+    #email{
+        padding: 5px 25px;
+        width: 80%;
+        background-color: $primary-color;
+        border: $primary-border;
+        border-radius: 20px;
+    }
 
     label{
         font-size: 20px;
+
     }
 
     textarea{
@@ -24,4 +40,25 @@ form{
 
         padding: 10px;
     }
+    button{
+        background-color: $primary-color;
+        color:$font-color;
+        padding: 10px;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+        
+        &:hover{
+            color: $primary-color;
+            background-color: #ffffffc8;
+            transition: all 0.3s ease-in-out;
+        }
+    }
 }
+
+@media screen and (max-width: 341px) {
+#mainContact{
+    h1{
+        margin-bottom: 100px;
+    }
+
+}}

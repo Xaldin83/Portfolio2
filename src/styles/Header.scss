@@ -1,49 +1,111 @@
 @import './global.scss';
 
+
 header{
-    display: flex;
+    margin: auto;
+
     padding: 34px 0 ;
     border: $primary-border;
     background-color: #00000050;
-
+    
     height: 129px;
     position: fixed;
-    width: 100%;
+    width: 99vw;
     top: 0;
-    align-items: center;
     z-index: 1000;
     backdrop-filter: blur(10px);
-
     
-    img{
-        max-width: 130px;
-        border-radius: 30px;
-        position: absolute;
-        top: 34px;
-        left: 34px;
+    #burgerMenu{
+        display: none;
     }
-    
-    nav{
-        position: relative;
+
+    article{
+        align-items: center;
         display: flex;
         margin: auto;
-        gap: 250px;
-        background-color: $second-color;
-        padding: 50px;
-        border-radius: 20px;
-        border: $primary-border;
+        max-width: 1440px;
+        width: 100%;
+        justify-content: space-between;
 
-        a{
-            text-decoration: none;
-            font-family: $font-stack;
-            font-weight: 400;
-            font-size: 20px;
-            color: #230c33;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                color: white;
+        img{
+            max-width: 130px;
+            border-radius: 30px;
+        }
+        
+        nav{
+            position: relative;
+            display: flex;
+            gap: 250px;
+            background-color: $second-color;
+            padding: 50px;
+            border-radius: 20px;
+            border: $primary-border;
+    
+            a{
+                text-decoration: none;
+                font-family: $font-stack;
+                font-weight: 400;
+                font-size: 20px;
+                color: #230c33;
                 transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: white;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+
+        div{
+            max-width: fit-content;
+        
+            a{
+                color: white;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                font-size: 25px;
+                padding-right: 20px;
+                &:hover{
+                    color: $primary-color;
+                    transition: all 0.3s ease-in-out;
+
+                }
             }
         }
     }
+
 }
+
+.active{
+    position: absolute;
+    right: 0;
+    top:156px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        article{
+            justify-content: space-around;
+            #burgerMenu{
+                display: block;
+                color: white;
+
+                transition: all 0.3s ease-in-out;
+                
+                &:hover{
+                    color: $primary-color;
+                    transition: all 0.3s ease-in-out;
+
+                }
+
+
+            }
+
+
+            nav{
+            display: none;
+        }}}
+    }

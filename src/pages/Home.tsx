@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Footer from "../composants/Footer";
 import Navbar from "../composants/Header";
 import Langages_programmation from "../composants/SkillProgrammation";
@@ -15,7 +15,7 @@ const Home = () =>{
 
             <Navbar/>
 
-            <main>
+            <main id="mainHome">
                 <h1>Bienvenue sur mon portfolio</h1>
 
                 <section id="presentation">

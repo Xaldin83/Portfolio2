@@ -1,44 +1,59 @@
 // import { Link } from "react-router-dom";
 import Footer from "../composants/Footer";
 import Navbar from "../composants/Header";
-import emailjs from '@emailjs/browser';
+// Make sure to run npm install @formspree/react
+// For more help visit https://formspr.ee/react-help
+// import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 import '../styles/contact.scss';
-import { useRef } from "react";
 
 
-export const ContactUs = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm('service_lxpossg', 'template_4rfdp68', form.current, {
-        publicKey: '15830R4mtb_zvVWKY',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
-
+function ContactForm() {
+  const [state, handleSubmit] = useForm("meerkwav");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Nom</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" cols="25" rows="14"/>
-      <input type="submit" value="Send" />
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Votre adresse mail  
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+        cols={25}
+        rows={10}
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Envoyer
+      </button>
     </form>
   );
-};
+}
+
+function App() {
+  return (
+    <ContactForm />
+  );
+}
+
+// export default App;
 
 
 const Contact = () =>{
@@ -47,9 +62,10 @@ const Contact = () =>{
         <>
 
             <Navbar/>
-            <h1>Me contacter</h1>
-            <ContactUs/>
-
+            <main id="mainContact">
+              <h1>Me contacter</h1>
+              <App/> 
+            </main>
             <Footer/>
         </>
     )

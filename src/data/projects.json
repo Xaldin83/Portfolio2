@@ -3,35 +3,35 @@
         "id": 1,
         "title": "Raytracing",
         "description":"Création en Python d'un sytème basique de raytracing, en utilisant numpy et matplot.lib.",
-        "image": "public/img/images/raytracing.png",
+        "image": "./img/images/raytracing.png",
         "link":"https://github.com/Xaldin83/RayTracing"
     },
     {
         "id": 2,
         "title": "Pokedex",
         "description":"Création d'un pokédex dynamique en python, en utilisant TKinter.",
-        "image": "public/img/images/pokedex.png",
+        "image": "./img/images/pokedex.png",
         "link":"https://github.com/Xaldin83/Pokedex_Python"
     },
     {
         "id": 3,
         "title": "Facturation",
         "description":"Création d'un logiciel de facturation en utilisant TKinter et la Base de donnée MySQL/PostGreSQL.",
-        "image": "public/img/images/facture.png",
+        "image": "./img/images/facture.png",
         "link":"https://github.com/Xaldin83/Facture"
     },
     {
         "id": 4,
         "title": "Météo",
         "description":"Création d'une application météo en js, html et css.",
-        "image": "public/img/images/Sunny_intervals.png",
+        "image": "./img/images/Sunny_intervals.png",
         "link":"https://github.com/Xaldin83/Meteo"
     },
     {
         "id": 5,
         "title": "Back&Front",
         "description":"Création d'un site d'affichage de citation et de gestion d'utilisateur via la Base de donnée Mongoose et le langage JavaScript.",
-        "image": "public/img/images/Dialogue.webp",
+        "image": "./img/images/Dialogue.webp",
         "link":"https://github.com/Xaldin83/BackJS"
     }
 

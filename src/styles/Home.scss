@@ -1,19 +1,17 @@
 @import './global.scss';
 
-main{
+#mainHome{
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 60px;
-    
-    h1{
 
-    }
-
+    max-width: 100vw;
 
     #presentation{
 
         margin: auto;
         max-width: 600px;
+
         background-color: $third-color;
         border: $second-border;
         border-radius: 30px;
@@ -22,6 +20,7 @@ main{
 
         p{
             font-size: 20px;
+            padding: 10px;
         }
     }
 
@@ -86,7 +85,7 @@ main{
                 }
             }
         }
-
+    
     }
 
     #formations{
@@ -148,3 +147,74 @@ main{
         }
     }
 }
+
+@media screen and (max-width: 1441px) {
+    #mainHome{
+
+        #presentation{
+
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        h2{
+            max-width: 100%;
+            width: 100%;
+        }
+        }
+
+        #competences{
+
+            grid-template-columns: 1fr;
+            max-width: 100%;
+
+            h2{
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                }
+            }
+        }
+    }
+
+
+@media screen and (max-width: 767px) {
+    #mainHome{
+
+        h1{
+            padding-bottom: 50px;
+        }
+
+        #presentation{
+        padding: 0;
+        margin: auto;
+        max-width: 300px;
+        width: 100%;
+        h2{
+            max-width: 300px;
+            width: 100%;
+        }
+        }
+
+        #competences{
+            padding: 0;
+        grid-template-columns: 280px;
+            max-width: 286px;
+
+        article div {
+            flex-direction: column;
+        }
+        }
+
+        #formations{
+            padding: 0;
+            max-width: 286px;
+            h2{max-width: 300px;}
+        }
+
+    }}
+
+@media screen and (max-width: 363px) {
+    #mainHome{
+
+        h1{
+            padding-bottom: 150px;
+        }}}

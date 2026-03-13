@@ -42,6 +42,7 @@ const Projects = () => {
                         <h1>Mes projets</h1>
 
                         <input
+                            className="search"
                             type="text"
                             placeholder="Rechercher un projet..."
                             value={search}
