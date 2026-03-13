@@ -33,6 +33,21 @@
         "description":"Création d'un site d'affichage de citation et de gestion d'utilisateur via la Base de donnée Mongoose et le langage JavaScript.",
         "image": "./img/images/Dialogue.webp",
         "link":"https://github.com/Xaldin83/BackJS"
+    },
+    {
+        "id": 6,
+        "title": "SkillFacileJS",
+        "description":"Création d'un site avec des fonctionnalités en JS.",
+        "image": "./img/images/logo-blanc.png",
+        "link":"https://github.com/Xaldin83/SkillFacileJS"
+    },
+    {
+        "id": 7,
+        "title": "SkillFacileJS",
+        "description":"Création d'un site de blog basique, en PHP.",
+        "image": "./img/images/blog.png",
+        "link":"https://github.com/Xaldin83/Blog"
     }
+
 
 ]

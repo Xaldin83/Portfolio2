@@ -11,6 +11,9 @@
     display: flex;
     margin: auto;
     width: 500px;
+    &::placeholder{
+        color: white;
+    }
 }
 
 img{

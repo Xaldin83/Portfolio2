@@ -65,6 +65,7 @@ const Projects = () => {
                         )}
                     </div>
                 </section>
+                <a href="https://github.com/Xaldin83">Voir plus</a>
                 <Footer/>
 
         </>
