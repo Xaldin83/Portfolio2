@@ -65,7 +65,7 @@ const Projects = () => {
                         )}
                     </div>
                 </section>
-                <a href="https://github.com/Xaldin83">Voir plus</a>
+                <a href="https://github.com/Xaldin83" id="git">Voir plus de projets</a>
                 <Footer/>
 
         </>

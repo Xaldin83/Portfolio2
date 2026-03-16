@@ -43,7 +43,7 @@
     },
     {
         "id": 7,
-        "title": "SkillFacileJS",
+        "title": "Blog",
         "description":"Création d'un site de blog basique, en PHP.",
         "image": "./img/images/blog.png",
         "link":"https://github.com/Xaldin83/Blog"
